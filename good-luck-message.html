@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wishing You Luck!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+      color: white;
+      overflow: hidden;
+    }
+
+    .stars {
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+      animation: twinkle 5s infinite linear;
+      position: absolute;
+      z-index: 0;
+    }
+
+    @keyframes twinkle {
+      from { background-position: 0 0; }
+      to { background-position: -1000px 1000px; }
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      color: #ffdd57;
+      text-shadow: 0 0 10px #fff4a3, 0 0 20px #ffd700;
+      animation: glow 2s infinite ease-in-out;
+    }
+
+    @keyframes glow {
+      0%, 100% { text-shadow: 0 0 10px #fff4a3, 0 0 20px #ffd700; }
+      50% { text-shadow: 0 0 20px #fff89d, 0 0 30px #ffd700; }
+    }
+
+    p {
+      font-size: 1.5em;
+      max-width: 700px;
+      margin: 20px auto;
+      line-height: 1.6;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    .sparkle {
+      font-size: 2em;
+      animation: sparkle 2s infinite;
+    }
+
+    @keyframes sparkle {
+      0%, 100% { opacity: 0.9; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.2); }
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 1.1em;
+      color: #ccc;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="container">
+    <h1>Wishing You All the Best!</h1>
+    <div class="sparkle">✨</div>
+    <p>Dear Friend,</p>
+    <p>As you step into your exam, know that my heart is sending you the brightest wishes and the strongest prayers.</p>
+    <p>You’re capable, you’re smart, and you’ve got everything it takes to shine brilliantly.</p>
+    <p>Stay calm, stay positive, and let your hard work speak for itself.</p>
+    <p>Good luck, my amazing friend. The stars are with you tonight!</p>
+    <div class="footer">— With lots of good wishes and belief in you</div>
+  </div>
+</body>
+</html>
